@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Tag from '../../ui/Tag';
-import { guests } from '../../data/data-guests';
 import { Flag } from '../../ui/Flag';
 import Button from '../../ui/Button';
 import { Link } from 'react-router-dom';
@@ -26,7 +25,7 @@ const Guest = styled.div`
 `;
 
 function TodayItem({ activity }) {
-  const { id, status, quests, numNights } = activity;
+  const { id, status, guests, numNights } = activity;
   return (
     <StyledTodayItem>
       {status === 'unconfirmed' && <Tag type='green'>Arriving</Tag>}

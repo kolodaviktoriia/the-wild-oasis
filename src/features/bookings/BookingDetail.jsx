@@ -9,12 +9,11 @@ import Button from '../../ui/Button';
 import ButtonText from '../../ui/ButtonText';
 
 import { useMoveBack } from '../../hooks/useMoveBack';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useBooking } from './useBooking';
 import Spinner from '../../ui/Spinner';
 import {
   HiArrowDownOnSquare,
-  HiArrowUpOnSquare,
   HiArrowUpOnSquareStack,
   HiTrash,
 } from 'react-icons/hi2';
